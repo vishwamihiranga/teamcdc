@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduler 02</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the existing CSS file -->
+<style>
+        /* Animation for the navbar brand */
+        .navbar-brand {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Animation for the navbar links */
+        .navbar-nav .nav-link {
+            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffcc00; /* Change to your preferred hover color */
+            transform: scale(1.1);
+        }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <b>Time Management App</b>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="main.html">Scheduler 1</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="task_management.html">Task Management</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="user_registration.html">User</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div class="container">
+        <div id="scheduler-2" class="section active">
+            <h2>Scheduler 2</h2>
+            <p>Content for Scheduler 2 will go here.</p>
+        </div>
+    </div>
+</body>
+</html>

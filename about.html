@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar-brand img {
+            margin-right: 10px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .section {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 5px 0;
+        }
+        footer {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        /* Animation for the navbar brand */
+        .navbar-brand {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Animation for the navbar links */
+        .navbar-nav .nav-link {
+            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffcc00; /* Change to your preferred hover color */
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <b>Time Management App</b>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="main.html">Scheduler 1</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="task_management.html">Task Management</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="user_registration.html">User</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div class="container">
+        <div id="about" class="section active">
+            <h2>About</h2>
+            <center>
+                <p><em>Welcome to the Time Management App!</em></p>
+                <p>This app was developed for Xban 2024 by the Coding Club Society of Gampaha Bandaranaike College. It aims to help students manage their time effectively and efficiently through innovative scheduling tools.</p>
+                <p>Created with the dedication and effort of:</p>
+            </center>
+            <ul class="list-group">
+                <li class="list-group-item">K.A.Vishwa Mihiranga Kuruppu</li>
+                <li class="list-group-item">K.A.Deshan Dineth Kulathunda</li>
+                <li class="list-group-item">A. Namidu</li>
+            </ul>
+        </div>
+    </div>
+    <footer class="text-center bg-dark text-white py-3 mt-5">
+        <b>&copy; 2024 Coding Club Bandaranayake College Gampaha</b>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="home.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+        /* Animation for the navbar brand */
+        .navbar-brand {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Animation for the navbar links */
+        .navbar-nav .nav-link {
+            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffcc00; /* Change to your preferred hover color */
+            transform: scale(1.1);
+        }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <b>Time Management App</b>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="main.html">Scheduler 1</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="task_management.html">Task Management</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="user_registration.html">User</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+
+    <div class="container text-center mt-5 pt-5">
+        <h1 class="title animate__animated animate__fadeInDown">Welcome to the Time Management App</h1>
+        <p class="animate__animated animate__fadeInUp">Get started by managing your tasks and activities effectively.</p>
+        <center><button onclick="window.location.href='main.html'" class="btn custom-button animate__animated animate__pulse animate__infinite">
+            <strong>GET START</strong>
+            <div id="container-stars">
+                <div id="stars"></div>
+            </div>
+            <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </button>
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="subtitle animate__animated animate__fadeIn">What Is This?</h1>
+        <p class="text-center animate__animated animate__fadeIn">Introducing TeamCDC's Time Management App for Kids, designed to help children develop essential organizational skills in a fun and engaging way. Our app empowers kids to manage their daily tasks and activities, fostering responsibility and independence from an early age.</p>
+        <h3 class="text-center animate__animated animate__fadeIn"><b> What is Priority (1-10) Explanation</b></h3>
+        <p class="text-center animate__animated animate__fadeIn">You can give 5 to 10 transits to the subject you want to prioritize and schedule more time for it.</p>
+        <p class="text-center animate__animated animate__fadeIn">You can study less and give a lower priority to the subject, that is between 1 and 5 and schedule the time according to the number you have given.</p>
+    </div>
+
+    <footer>&copy; 2024 Coding Club Bandaranayake College Gampaha</footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a').forEach(anchor => {
+                anchor.addEventListener('click', function(event) {
+                    if (this.href.includes('user_registration.html')) {
+                        sessionStorage.setItem('previousPage', window.location.href);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
